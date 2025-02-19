@@ -76,24 +76,25 @@ export default function GetData() {
   }
 
   return (
-    <main className="w-full h-full bg-slate-100 p-10 px-32 space-y-10">
-      <div className="flex flex-col lg:flex-row lg:justify-center gap-20">
+    <main className="w-full h-full bg-slate-100 lg:p-10 p-8 md:p-20 lg:px-32 space-y-10">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-7 md:gap-14 lg:gap-20">
         {/* Left Column: Image */}
-        <div className="w-[65%] h-auto">
+        <div className="w-full lg:w-[65%] h-auto">
           {data.mainImage && (
             <Image
               src={urlFor(data.mainImage).url()} 
               alt={data.title}
               width={700}
               height={100}
-              className="object-cover w-full h-auto rounded-md shadow-lg"
+              className=" object-cover w-full h-auto rounded-md shadow-lg"
             />
           )}
         </div>
 
         {/* Right Column: Content */}
-        <div className="w-full h-auto flex flex-col justify-between py-10">
-          <h1 className="text-blue-950 text-7xl font-bold mb-6">{data.title}</h1>
+        <div className="w-full h-auto flex flex-col justify-between pt-10 space-y-3">
+          <h1 className="text-blue-950 text-3xl md:text-5xl lg:text-7xl text-center lg:text-left font-bold mb-6">{data.title}</h1>
+          <hr className="lg:hidden "/>
           <div className="grid grid-cols-2 gap-8 text-[18px]">
             <p className="text-gray-700">
               <strong>Cooker:</strong> {data.cooker}
@@ -110,7 +111,8 @@ export default function GetData() {
           </div>
         </div>
       </div>
-      <div className="text-lg text-rose-950 mb-4">
+      <hr className="lg:hidden "/>
+      <div className="text-md md:text-lg text-rose-950 mb-4">
         <p>{data.body}</p>
       </div>
     </main>

@@ -75,19 +75,19 @@ export default async function PopularRecipes() {
                                         {post.mainImage && (
                                             <Image width={500} height={300} src={urlFor(post.mainImage).url()} alt={post.title} />)}
                                         <div className="flex flex-col items-center gap-8 w-full h-auto absolute bottom-5">
-                                            <h1 className="text-2xl text-white text-center font-bold cursor-pointer">{post.title}</h1>
+                                            <h1 className="text-lg md:text-xl lg:text-2xl text-white text-center font-bold cursor-pointer">{post.title}</h1>
                                             <div className="flex items-center gap-10 text-lg">
                                                 <div className="flex gap-2 items-center cursor-pointer">
                                                     <GiKnifeFork className="text-[#FE4A51] w-5 h-5" />
-                                                    <p className="text-white">{post.servicing}</p>
+                                                    <p className="text-md md:text-lg text-white">{post.servicing}</p>
                                                 </div>
                                                 <div className="flex gap-2 items-center cursor-pointer">
                                                     <FaRegClock className="text-[#FE4A51] w-5 h-5" />
-                                                    <p className="text-white">{post.time}</p>
+                                                    <p className="text-md md:text-lg text-white">{post.time}</p>
                                                 </div>
                                                 <div className="flex gap-2 items-center cursor-pointer">
                                                     <FiUser className="text-[#FE4A51] w-5 h-5" />
-                                                    <p className="text-white">{post.cooker}</p>
+                                                    <p className="text-md md:text-lg text-white">{post.cooker}</p>
                                                 </div>
                                             </div>
                                         </div>
