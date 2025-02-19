@@ -79,15 +79,15 @@ export default async function PopularRecipes() {
                                             <div className="flex items-center gap-10 text-lg">
                                                 <div className="flex gap-2 items-center cursor-pointer">
                                                     <GiKnifeFork className="text-[#FE4A51] w-5 h-5" />
-                                                    <p className="text-md md:text-lg text-white">{post.servicing}</p>
+                                                    <p className="text-sm md:text-lg text-white">{post.servicing}</p>
                                                 </div>
                                                 <div className="flex gap-2 items-center cursor-pointer">
                                                     <FaRegClock className="text-[#FE4A51] w-5 h-5" />
-                                                    <p className="text-md md:text-lg text-white">{post.time}</p>
+                                                    <p className="text-sm md:text-lg text-white">{post.time}</p>
                                                 </div>
                                                 <div className="flex gap-2 items-center cursor-pointer">
                                                     <FiUser className="text-[#FE4A51] w-5 h-5" />
-                                                    <p className="text-md md:text-lg text-white">{post.cooker}</p>
+                                                    <p className="text-sm md:text-lg text-white">{post.cooker}</p>
                                                 </div>
                                             </div>
                                         </div>

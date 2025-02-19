@@ -97,16 +97,16 @@ export default function GetData() {
           <hr className="lg:hidden "/>
           <div className="grid grid-cols-2 gap-8 text-[18px]">
             <p className="text-gray-700">
-              <strong>Cooker:</strong> {data.cooker}
+              <strong>Cooker:</strong><br className="md:hidden"/> {data.cooker}
             </p>
             <p className="text-gray-700">
-              <strong>Time:</strong> {data.time} minutes
+              <strong>Time:</strong> <br className="md:hidden"/> {data.time} minutes
             </p>
             <p className="text-gray-700">
-              <strong>Servings:</strong> {data.servicing}
+              <strong>Servings:</strong> <br className="md:hidden"/> {data.servicing}
             </p>
             <p className="text-gray-700">
-              <strong>Published At:</strong> {data.publishedAt.slice(0, 10)}
+              <strong>Published At:</strong><br className="md:hidden"/> {data.publishedAt.slice(0, 10)}
             </p>
           </div>
         </div>

@@ -35,7 +35,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="w-full h-auto flex justify-center items-center px-4 md:px-16 lg:px-[105px] py-2 bg-[#2D2D2D]">
-                <p className="text-white text-lg font-medium flex items-start md:items-center gap-1 md:gap-2 text-center"><span className="text-xl md:text-2xl lg:text-3xl">&copy;</span> Copyright 2025 by Naseer Ahmed Wighio. All Right Reserved</p>
+                <p className="text-white text-lg font-medium flex items-start md:items-center gap-1 md:gap-2 text-center"><span>&copy;</span> Copyright 2025 by Naseer Ahmed Wighio. All Right Reserved</p>
             </div>
             </main>
         </>
